@@ -42,3 +42,39 @@ A deeper dive into the philosophical underpinnings of the tradition (such as no-
 [An Introduction to Buddhist Ethics by Peter Harvey](https://dhammadana.weebly.com/uploads/2/2/3/5/22352530/an_introduction_to_buddhist_ethics_peter_harvey-_cup.pdf) - A systematic, free PDF exploration of foundational values, monastic precepts, and how Buddhist ethics apply to contemporary issues.
 
 The Fundamental Wisdom of the Middle Way: Nagarjuna's Mulamadhyamakakarika translated by Jay L. Garfield - Search for Garfield's Oxford University Press translation, which includes indispensable commentary for beginners; read Harvey's overview of ethics first to ground yourself in moral frameworks before tackling this abstract, deconstructive philosophy.
+
+## Foundations of Buddhist Thought and History
+
+An introduction to the historical origins of Buddhism in ancient India, the life of Siddhartha Gautama, and foundational doctrinal frameworks including the Four Noble Truths, the Eightfold Path, dependent origination, and monastic life.
+
+[The Foundations of Buddhism by Rupert Gethin (Oxford University Press)](https://archive.org/details/foundationsofbud00rupe) - The standard university-level textbook for the discipline, offering a comprehensive and accessible examination of the shared doctrinal and historical heritage of the Buddhist tradition.
+
+[Buddhism Through Its Scriptures (Harvard University on edX)](https://www.edx.org/learn/buddhism/harvard-university-buddhism-through-its-scriptures) - A guided, interactive online course that serves as a multimedia alternative or structured study companion to Gethin's textbook, illustrating how early foundational concepts are expressed in scriptural and cultural forms.
+
+## The Buddhist Canon and Primary Texts
+
+A focused study of the formation, internal organization, and hermeneutics of canonical Buddhist literature, spanning early Pāli discourses and foundational Mahāyāna sūtras.
+
+[In the Buddha's Words: An Anthology of Discourses from the Pali Canon by Bhikkhu Bodhi (Wisdom Publications)](https://books.google.com/books?isbn=9780861714919) - The definitive thematic anthology of the Pāli Nikāyas, providing essential analytical introductions and translations that serve as the primary structured reader for early Buddhist literature.
+
+[The Dhammapada: The Buddha's Path of Wisdom translated by Acharya Buddharakkhita (Access to Insight)](https://www.accesstoinsight.org/tipitaka/kn/dhp/index.html) - A free, verse-by-verse translation of early Buddhism's most accessible gnomic text, best read alongside Bodhi's anthology for a poetic, direct look at early Buddhist moral and spiritual teachings.
+
+[The Lotus Sutra translated by Tsugunari Kubo and Akira Yuyama (BDK America)](https://www.bdkamerica.org/product/the-lotus-sutra-revised-second-edition/) - A seminal Mahāyāna scripture freely available through an open-access scholarly translation, serving as an essential textual companion to the Pāli Canon that illustrates the crucial transition to Mahāyāna concepts such as universal Buddhahood and skillful means.
+
+## Development of Buddhist Traditions
+
+A historical and geographic survey tracing the evolution, doctrinal divergences, and cultural adaptations of the Theravāda, Mahāyāna, and Vajrayāna traditions across Asia and into the modern world.
+
+[An Introduction to Buddhism: Teachings, History and Practices by Peter Harvey (Cambridge University Press)](https://books.google.com/books?isbn=9780521676748) - The primary comprehensive historical survey for this topic, detailing both the doctrinal divergence into distinct regional traditions and their associated social, meditative, and ethical practices.
+
+[The Buddhist Religion: A Historical Introduction by Richard H. Robinson and Willard L. Johnson (Wadsworth Publishing)](https://books.google.com/books?isbn=9780534207182) - A direct alternative to Harvey's volume, recommended for learners who prefer a strictly chronological narrative tracing the geographical diffusion of Buddhism across specific Asian regions.
+
+## Buddhist Philosophy and Ethics
+
+An examination of systematic Buddhist metaphysics, epistemology, and phenomenology across the Abhidharma, Madhyamaka, and Yogācāra traditions, alongside foundational Buddhist moral and ethical frameworks.
+
+[Buddhism as Philosophy: An Introduction by Mark Siderits (Hackett Publishing)](https://books.google.com/books?isbn=9781624669811) - The foundational textbook for this subject, presenting a rigorous, systematic analysis of core philosophical arguments concerning personal identity, reality, perception, and emptiness across early Buddhism, Abhidharma, Madhyamaka, and Yogācāra.
+
+[The Fundamental Wisdom of the Middle Way: Nagarjuna's Mulamadhyamakakarika translated by Jay L. Garfield (Oxford University Press)](https://books.google.com/books?isbn=9780195093360) - A seminal primary philosophical treatise that builds directly on the conceptual frameworks introduced in Siderits, offering a verse-by-verse translation and commentary that unpacks the Madhyamaka critique of intrinsic existence.
+
+[An Introduction to Buddhist Ethics: Foundations, Values and Issues by Peter Harvey (Cambridge University Press)](https://books.google.com/books?isbn=9780521556408) - A complementary study that grounds theoretical metaphysics in normative practice, systematically exploring Buddhist moral precepts, karma, and the application of classical values to contemporary ethical questions.
