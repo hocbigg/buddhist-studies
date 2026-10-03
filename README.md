@@ -1,15 +1,34 @@
-### Curation Summary
-
-This core curriculum is designed to give independent learners a rigorous, university-level grounding in Buddhist Studies without requiring institutional enrollment. The four subjects were chosen because they represent the indispensable pillars of the discipline: historical/doctrinal foundations, textual literacy, historical development of the major traditions, and philosophical/ethical frameworks. Specialized topics (e.g., specific regional Buddhisms, advanced language study, or Buddhist art) are excluded as they belong in advanced tracks.
-
-*   **Foundations of Buddhist Thought and History:** Qualifies as core because understanding the Buddha's life and baseline doctrines (Four Noble Truths, Karma) is mandatory before analyzing later developments. *Free-vs-paid balance:* Entirely free. I found excellent open-access textbooks on the Internet Archive and high-quality audit-mode MOOCs from Harvard and Princeton, making paid resources unnecessary here.
-*   **The Buddhist Canon and Primary Texts:** Qualifies as core because Buddhist Studies is deeply text-centric; learners must know how the canon was formed and how to read primary sources. *Free-vs-paid balance:* Mostly paid. While I found a high-quality free translation of the Dhammapada, I checked for a free, pedagogically structured anthology of the broader Pali Canon and found none adequate. Bhikkhu Bodhi's "In the Buddha's Words" is a paid book, but its thematic commentary is so essential for beginners that it is worth the investment.
-*   **Development of Buddhist Traditions:** Qualifies as core because the split into Theravada, Mahayana, and Vajrayana—and their spread across Asia—fundamentally shapes how the religion is practiced today. *Free-vs-paid balance:* Entirely free. A comprehensive, openly hosted PDF textbook by Peter Harvey covers this ground beautifully, negating the need to purchase the classic (but pricier) historical surveys.
-*   **Buddhist Philosophy and Ethics:** Qualifies as core because the tradition's unique metaphysical claims (no-self, emptiness) and moral precepts are its most significant intellectual contributions. *Free-vs-paid balance:* Mixed. A fantastic free PDF covers the ethics side comprehensively. For the philosophy side, Nagarjuna's primary text requires a paid modern translation (Jay Garfield's) because his philosophical commentary is essential for beginners and no adequate free equivalent exists.
-
+---
+title: Hocbigg - Buddhist Studies
+description: Path to a free self-taught education in Buddhist Studies.
 ---
 
-## Foundations of Buddhist Thought and History
+## Introduction
+
+Buddhist Studies is the multidisciplinary academic study of the Buddhist tradition across its historical, textual, philosophical, and cultural manifestations. Unlike confessional religious training or contemporary therapeutic mindfulness, academic Buddhist Studies approaches the tradition with critical and historical methods. It investigates how core doctrines emerged in ancient India, how diverse canonical corpora were composed and transmitted, how institutions adapted across Asia, and how scholastic thinkers constructed sophisticated systems of metaphysics, epistemology, and ethics.
+
+This curriculum assumes no prior background in Buddhism, Asian history, or classical languages. It is designed for self-directed learners seeking a rigorous, university-level foundation in the discipline rather than a superficial overview or a devotional manual. The focus throughout is on developing foundational doctrinal literacy, understanding canonical structures, and acquiring the critical context necessary to interpret primary and secondary sources accurately.
+
+### How to Navigate the Curriculum
+
+The curriculum is structured linearly across four foundational subjects that reflect a standard undergraduate sequence:
+
+- **Foundations of Buddhist Thought and History** establishes the essential baseline, introducing the life of the Buddha, the historical milieu of ancient India, and foundational doctrines such as the Four Noble Truths, dependent origination, and karma.
+- **The Buddhist Canon and Primary Texts** builds directly on that baseline by introducing the structure and hermeneutics of the Pāli Canon and early Mahāyāna scriptures, training you to read primary discourses in translation.
+- **Development of Buddhist Traditions** broadens the scope chronologically and geographically, tracing how early Indian Buddhism diversified into the distinct institutional and cultural forms of Theravāda, Mahāyāna, and Vajrayāna across Asia.
+- **Buddhist Philosophy and Ethics** deepens your analytical skills by examining the systematic philosophical debates (such as Abhidharma ontology, Madhyamaka emptiness, and Yogācāra mind-only doctrines) alongside classical and applied Buddhist moral frameworks.
+
+Because each subject provides the conceptual vocabulary and historical context needed for the next, you should work through them in the order presented rather than jumping ahead to systematic philosophy or later historical developments.
+
+### Scope
+
+This page contains only the core curriculum: the indispensable subjects every student in the discipline must master before pursuing specialized interests. It deliberately excludes specialized regional lineages, advanced language acquisition (such as Pāli, Sanskrit, or Classical Chinese), and modern cultural developments. 
+
+Once you have established this foundation, you can branch out into specialized subfields in [Advanced Topics](advanced_topics.md).
+
+## Curriculum
+
+### Foundations of Buddhist Thought and History
 
 An introduction to the historical origins of Buddhism in ancient India, the life of the Buddha, and the core doctrines such as the Four Noble Truths, the Eightfold Path, Karma, and Samsara.
 
@@ -17,9 +36,9 @@ An introduction to the historical origins of Buddhism in ancient India, the life
 
 [Buddhism Through Its Scriptures (Harvard University on edX)](https://www.edx.org/learn/buddhism/harvard-university-buddhism-through-its-scriptures) - If you prefer a guided video format, this free-to-audit MOOC pairs beautifully with Gethin's book by exploring how core doctrines manifest in actual texts.
 
-Buddhism and Modern Psychology (Princeton University) - Search for "Buddhism and Modern Psychology" on Coursera to find this highly popular course; it offers a more analytical, modern angle than the Harvard MOOC by examining concepts like impermanence and no-self through the lens of evolutionary psychology.
+[Buddhism and Modern Psychology (Princeton University)](https://www.youtube.com/playlist?list=PLXRGPjh6kmaNs-PqEIcX0xafTirZl-0-d) - It offers a more analytical, modern angle than the Harvard MOOC by examining concepts like impermanence and no-self through the lens of evolutionary psychology.
 
-## The Buddhist Canon and Primary Texts
+### The Buddhist Canon and Primary Texts
 
 An exploration of the formation, structure, and key literature of the Buddhist scriptural traditions, including the Pali Canon (Tipitaka) and foundational Mahayana sutras.
 
@@ -27,7 +46,7 @@ An exploration of the formation, structure, and key literature of the Buddhist s
 
 [The Dhammapada: The Buddha's Path of Wisdom translated by Acharya Buddharakkhita](https://www.accesstoinsight.org/tipitaka/kn/dhp/index.html) - A free, highly accessible translation of the most famous text from the Pali Canon; use this as a standalone, poetic entry point while relying on Bodhi's anthology above as your primary structured guide to the broader canon.
 
-## Development of Buddhist Traditions
+### Development of Buddhist Traditions
 
 A survey of the historical evolution and geographical spread of the three major vehicles (Theravada, Mahayana, and Vajrayana) across Asia and into the modern world.
 
@@ -35,7 +54,7 @@ A survey of the historical evolution and geographical spread of the three major 
 
 The Buddhist Religion: A Historical Introduction by Richard H. Robinson and Willard L. Johnson - Search for this classic chronological textbook on library platforms or used book markets; it serves as a direct alternative to Harvey's work for those who prefer a strict historical narrative over a thematic breakdown.
 
-## Buddhist Philosophy and Ethics
+### Buddhist Philosophy and Ethics
 
 A deeper dive into the philosophical underpinnings of the tradition (such as no-self, emptiness, and dependent origination) and its foundational moral frameworks.
 
@@ -43,7 +62,7 @@ A deeper dive into the philosophical underpinnings of the tradition (such as no-
 
 The Fundamental Wisdom of the Middle Way: Nagarjuna's Mulamadhyamakakarika translated by Jay L. Garfield - Search for Garfield's Oxford University Press translation, which includes indispensable commentary for beginners; read Harvey's overview of ethics first to ground yourself in moral frameworks before tackling this abstract, deconstructive philosophy.
 
-## Foundations of Buddhist Thought and History
+### Foundations of Buddhist Thought and History
 
 An introduction to the historical origins of Buddhism in ancient India, the life of Siddhartha Gautama, and foundational doctrinal frameworks including the Four Noble Truths, the Eightfold Path, dependent origination, and monastic life.
 
@@ -51,7 +70,7 @@ An introduction to the historical origins of Buddhism in ancient India, the life
 
 [Buddhism Through Its Scriptures (Harvard University on edX)](https://www.edx.org/learn/buddhism/harvard-university-buddhism-through-its-scriptures) - A guided, interactive online course that serves as a multimedia alternative or structured study companion to Gethin's textbook, illustrating how early foundational concepts are expressed in scriptural and cultural forms.
 
-## The Buddhist Canon and Primary Texts
+### The Buddhist Canon and Primary Texts
 
 A focused study of the formation, internal organization, and hermeneutics of canonical Buddhist literature, spanning early Pāli discourses and foundational Mahāyāna sūtras.
 
@@ -61,7 +80,7 @@ A focused study of the formation, internal organization, and hermeneutics of can
 
 [The Lotus Sutra translated by Tsugunari Kubo and Akira Yuyama (BDK America)](https://www.bdkamerica.org/product/the-lotus-sutra-revised-second-edition/) - A seminal Mahāyāna scripture freely available through an open-access scholarly translation, serving as an essential textual companion to the Pāli Canon that illustrates the crucial transition to Mahāyāna concepts such as universal Buddhahood and skillful means.
 
-## Development of Buddhist Traditions
+### Development of Buddhist Traditions
 
 A historical and geographic survey tracing the evolution, doctrinal divergences, and cultural adaptations of the Theravāda, Mahāyāna, and Vajrayāna traditions across Asia and into the modern world.
 
@@ -69,7 +88,7 @@ A historical and geographic survey tracing the evolution, doctrinal divergences,
 
 [The Buddhist Religion: A Historical Introduction by Richard H. Robinson and Willard L. Johnson (Wadsworth Publishing)](https://books.google.com/books?isbn=9780534207182) - A direct alternative to Harvey's volume, recommended for learners who prefer a strictly chronological narrative tracing the geographical diffusion of Buddhism across specific Asian regions.
 
-## Buddhist Philosophy and Ethics
+### Buddhist Philosophy and Ethics
 
 An examination of systematic Buddhist metaphysics, epistemology, and phenomenology across the Abhidharma, Madhyamaka, and Yogācāra traditions, alongside foundational Buddhist moral and ethical frameworks.
 
