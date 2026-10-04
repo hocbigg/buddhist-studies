@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Hocbigg - Buddhist Studies</title>
+  <meta name="description" content="Path to a free self-taught education in Buddhist Studies.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/buddhist-studies/">
+  <meta property="og:title" content="Hocbigg - Buddhist Studies">
+  <meta property="og:description" content="Path to a free self-taught education in Buddhist Studies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/buddhist-studies/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/buddhist-studies/">Buddhist Studies</a></li>
+      <li><a href="/buddhist-studies/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="https://github.com/hocbigg/buddhist-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+<header class="page-header">
+  <img src="/images/logo.png" alt="Hocbigg logo">
+  <h1>Hocbigg - Buddhist Studies</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Buddhist Studies.</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-03">2026-10-03</time></small></p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>Buddhist Studies is the multidisciplinary academic study of the Buddhist tradition across its historical, textual, philosophical, and cultural manifestations. Unlike confessional religious training or contemporary therapeutic mindfulness, academic Buddhist Studies approaches the tradition with critical and historical methods. It investigates how core doctrines emerged in ancient India, how diverse canonical corpora were composed and transmitted, how institutions adapted across Asia, and how scholastic thinkers constructed sophisticated systems of metaphysics, epistemology, and ethics.</p>
+<p>This curriculum assumes no prior background in Buddhism, Asian history, or classical languages. It is designed for self-directed learners seeking a rigorous, university-level foundation in the discipline rather than a superficial overview or a devotional manual. The focus throughout is on developing foundational doctrinal literacy, understanding canonical structures, and acquiring the critical context necessary to interpret primary and secondary sources accurately.</p>
+<h3 id="how-to-navigate-the-curriculum">How to Navigate the Curriculum</h3>
+<p>The curriculum is structured linearly across four foundational subjects that reflect a standard undergraduate sequence:</p>
+<ul>
+<li><strong>Foundations of Buddhist Thought and History</strong> establishes the essential baseline, introducing the life of the Buddha, the historical milieu of ancient India, and foundational doctrines such as the Four Noble Truths, dependent origination, and karma.</li>
+<li><strong>The Buddhist Canon and Primary Texts</strong> builds directly on that baseline by introducing the structure and hermeneutics of the Pāli Canon and early Mahāyāna scriptures, training you to read primary discourses in translation.</li>
+<li><strong>Development of Buddhist Traditions</strong> broadens the scope chronologically and geographically, tracing how early Indian Buddhism diversified into the distinct institutional and cultural forms of Theravāda, Mahāyāna, and Vajrayāna across Asia.</li>
+<li><strong>Buddhist Philosophy and Ethics</strong> deepens your analytical skills by examining the systematic philosophical debates (such as Abhidharma ontology, Madhyamaka emptiness, and Yogācāra mind-only doctrines) alongside classical and applied Buddhist moral frameworks.</li>
+</ul>
+<p>Because each subject provides the conceptual vocabulary and historical context needed for the next, you should work through them in the order presented rather than jumping ahead to systematic philosophy or later historical developments.</p>
+<h3 id="scope">Scope</h3>
+<p>This page contains only the core curriculum: the indispensable subjects every student in the discipline must master before pursuing specialized interests. It deliberately excludes specialized regional lineages, advanced language acquisition (such as Pāli, Sanskrit, or Classical Chinese), and modern cultural developments. </p>
+<p>Once you have established this foundation, you can branch out into specialized subfields in <a href="advanced_topics.html">Advanced Topics</a>.</p>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-buddhist-thought-and-history">Foundations of Buddhist Thought and History</h3>
+<p>An introduction to the historical origins of Buddhism in ancient India, the life of the Buddha, and the core doctrines such as the Four Noble Truths, the Eightfold Path, Karma, and Samsara.</p>
+<p><a href="https://archive.org/details/foundationsofbud00rupe" target="_blank" rel="noopener noreferrer">The Foundations of Buddhism by Rupert Gethin</a> - The standard university-level textbook for this subject, available to borrow for free on the Internet Archive.</p>
+<p><a href="https://www.edx.org/learn/buddhism/harvard-university-buddhism-through-its-scriptures" target="_blank" rel="noopener noreferrer">Buddhism Through Its Scriptures (Harvard University on edX)</a> - If you prefer a guided video format, this free-to-audit MOOC pairs beautifully with Gethin's book by exploring how core doctrines manifest in actual texts.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLXRGPjh6kmaNs-PqEIcX0xafTirZl-0-d" target="_blank" rel="noopener noreferrer">Buddhism and Modern Psychology (Princeton University)</a> - It offers a more analytical, modern angle than the Harvard MOOC by examining concepts like impermanence and no-self through the lens of evolutionary psychology.</p>
+<h3 id="the-buddhist-canon-and-primary-texts">The Buddhist Canon and Primary Texts</h3>
+<p>An exploration of the formation, structure, and key literature of the Buddhist scriptural traditions, including the Pali Canon (Tipitaka) and foundational Mahayana sutras.</p>
+<p><a href="https://wisdomexperience.org/product/buddhas-words/" target="_blank" rel="noopener noreferrer">In the Buddha's Words: An Anthology of Discourses from the Pali Canon by Bhikkhu Bodhi</a> - The absolute gold standard guided reader for early Buddhist texts, providing essential thematic context for the suttas.</p>
+<p><a href="https://www.accesstoinsight.org/tipitaka/kn/dhp/index.html" target="_blank" rel="noopener noreferrer">The Dhammapada: The Buddha's Path of Wisdom translated by Acharya Buddharakkhita</a> - A free, highly accessible translation of the most famous text from the Pali Canon; use this as a standalone, poetic entry point while relying on Bodhi's anthology above as your primary structured guide to the broader canon.</p>
+<h3 id="development-of-buddhist-traditions">Development of Buddhist Traditions</h3>
+<p>A survey of the historical evolution and geographical spread of the three major vehicles (Theravada, Mahayana, and Vajrayana) across Asia and into the modern world.</p>
+<p><a href="https://static.sariputta.com/pdf/tipitaka/862/an-introduction-to-buddhism_harvey.pdf" target="_blank" rel="noopener noreferrer">An Introduction to Buddhism by Peter Harvey</a> - A comprehensive, free PDF textbook that meticulously traces the development of the Buddhist tradition in both Asia and the West.</p>
+<p>The Buddhist Religion: A Historical Introduction by Richard H. Robinson and Willard L. Johnson - Search for this classic chronological textbook on library platforms or used book markets; it serves as a direct alternative to Harvey's work for those who prefer a strict historical narrative over a thematic breakdown.</p>
+<h3 id="buddhist-philosophy-and-ethics">Buddhist Philosophy and Ethics</h3>
+<p>A deeper dive into the philosophical underpinnings of the tradition (such as no-self, emptiness, and dependent origination) and its foundational moral frameworks.</p>
+<p><a href="https://dhammadana.weebly.com/uploads/2/2/3/5/22352530/an_introduction_to_buddhist_ethics_peter_harvey-_cup.pdf" target="_blank" rel="noopener noreferrer">An Introduction to Buddhist Ethics by Peter Harvey</a> - A systematic, free PDF exploration of foundational values, monastic precepts, and how Buddhist ethics apply to contemporary issues.</p>
+<p>The Fundamental Wisdom of the Middle Way: Nagarjuna's Mulamadhyamakakarika translated by Jay L. Garfield - Search for Garfield's Oxford University Press translation, which includes indispensable commentary for beginners; read Harvey's overview of ethics first to ground yourself in moral frameworks before tackling this abstract, deconstructive philosophy.</p>
+<h3 id="foundations-of-buddhist-thought-and-history_1">Foundations of Buddhist Thought and History</h3>
+<p>An introduction to the historical origins of Buddhism in ancient India, the life of Siddhartha Gautama, and foundational doctrinal frameworks including the Four Noble Truths, the Eightfold Path, dependent origination, and monastic life.</p>
+<p><a href="https://archive.org/details/foundationsofbud00rupe" target="_blank" rel="noopener noreferrer">The Foundations of Buddhism by Rupert Gethin (Oxford University Press)</a> - The standard university-level textbook for the discipline, offering a comprehensive and accessible examination of the shared doctrinal and historical heritage of the Buddhist tradition.</p>
+<p><a href="https://www.edx.org/learn/buddhism/harvard-university-buddhism-through-its-scriptures" target="_blank" rel="noopener noreferrer">Buddhism Through Its Scriptures (Harvard University on edX)</a> - A guided, interactive online course that serves as a multimedia alternative or structured study companion to Gethin's textbook, illustrating how early foundational concepts are expressed in scriptural and cultural forms.</p>
+<h3 id="the-buddhist-canon-and-primary-texts_1">The Buddhist Canon and Primary Texts</h3>
+<p>A focused study of the formation, internal organization, and hermeneutics of canonical Buddhist literature, spanning early Pāli discourses and foundational Mahāyāna sūtras.</p>
+<p><a href="https://books.google.com/books?isbn=9780861714919" target="_blank" rel="noopener noreferrer">In the Buddha's Words: An Anthology of Discourses from the Pali Canon by Bhikkhu Bodhi (Wisdom Publications)</a> - The definitive thematic anthology of the Pāli Nikāyas, providing essential analytical introductions and translations that serve as the primary structured reader for early Buddhist literature.</p>
+<p><a href="https://www.accesstoinsight.org/tipitaka/kn/dhp/index.html" target="_blank" rel="noopener noreferrer">The Dhammapada: The Buddha's Path of Wisdom translated by Acharya Buddharakkhita (Access to Insight)</a> - A free, verse-by-verse translation of early Buddhism's most accessible gnomic text, best read alongside Bodhi's anthology for a poetic, direct look at early Buddhist moral and spiritual teachings.</p>
+<p><a href="https://www.bdkamerica.org/product/the-lotus-sutra-revised-second-edition/" target="_blank" rel="noopener noreferrer">The Lotus Sutra translated by Tsugunari Kubo and Akira Yuyama (BDK America)</a> - A seminal Mahāyāna scripture freely available through an open-access scholarly translation, serving as an essential textual companion to the Pāli Canon that illustrates the crucial transition to Mahāyāna concepts such as universal Buddhahood and skillful means.</p>
+<h3 id="development-of-buddhist-traditions_1">Development of Buddhist Traditions</h3>
+<p>A historical and geographic survey tracing the evolution, doctrinal divergences, and cultural adaptations of the Theravāda, Mahāyāna, and Vajrayāna traditions across Asia and into the modern world.</p>
+<p><a href="https://books.google.com/books?isbn=9780521676748" target="_blank" rel="noopener noreferrer">An Introduction to Buddhism: Teachings, History and Practices by Peter Harvey (Cambridge University Press)</a> - The primary comprehensive historical survey for this topic, detailing both the doctrinal divergence into distinct regional traditions and their associated social, meditative, and ethical practices.</p>
+<p><a href="https://books.google.com/books?isbn=9780534207182" target="_blank" rel="noopener noreferrer">The Buddhist Religion: A Historical Introduction by Richard H. Robinson and Willard L. Johnson (Wadsworth Publishing)</a> - A direct alternative to Harvey's volume, recommended for learners who prefer a strictly chronological narrative tracing the geographical diffusion of Buddhism across specific Asian regions.</p>
+<h3 id="buddhist-philosophy-and-ethics_1">Buddhist Philosophy and Ethics</h3>
+<p>An examination of systematic Buddhist metaphysics, epistemology, and phenomenology across the Abhidharma, Madhyamaka, and Yogācāra traditions, alongside foundational Buddhist moral and ethical frameworks.</p>
+<p><a href="https://books.google.com/books?isbn=9781624669811" target="_blank" rel="noopener noreferrer">Buddhism as Philosophy: An Introduction by Mark Siderits (Hackett Publishing)</a> - The foundational textbook for this subject, presenting a rigorous, systematic analysis of core philosophical arguments concerning personal identity, reality, perception, and emptiness across early Buddhism, Abhidharma, Madhyamaka, and Yogācāra.</p>
+<p><a href="https://books.google.com/books?isbn=9780195093360" target="_blank" rel="noopener noreferrer">The Fundamental Wisdom of the Middle Way: Nagarjuna's Mulamadhyamakakarika translated by Jay L. Garfield (Oxford University Press)</a> - A seminal primary philosophical treatise that builds directly on the conceptual frameworks introduced in Siderits, offering a verse-by-verse translation and commentary that unpacks the Madhyamaka critique of intrinsic existence.</p>
+<p><a href="https://books.google.com/books?isbn=9780521556408" target="_blank" rel="noopener noreferrer">An Introduction to Buddhist Ethics: Foundations, Values and Issues by Peter Harvey (Cambridge University Press)</a> - A complementary study that grounds theoretical metaphysics in normative practice, systematically exploring Buddhist moral precepts, karma, and the application of classical values to contemporary ethical questions.</p>
+    </article>
+  </main>
+
+</body>
+</html>

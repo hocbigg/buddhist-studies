@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Advanced Topics</title>
+  <meta name="description" content="Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/buddhist-studies/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/buddhist-studies/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/buddhist-studies/">Buddhist Studies</a></li>
+      <li><a href="/buddhist-studies/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="https://github.com/hocbigg/buddhist-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h3 id="specialization-tracks">Specialization Tracks</h3>
+<p>Self-directed learners should select one or two tracks that align with their theoretical or practical interests rather than attempting to complete all tracks sequentially.</p>
+<ul>
+<li><strong>Advanced Buddhist Philosophy:</strong> Dives into the technical ontological, epistemological, and phenomenological frameworks developed across classical Indian and East Asian Mahāyāna scholasticism.</li>
+<li><strong>Regional Traditions in Depth:</strong> Explores the distinct monastic structures, contemplative taxonomies, and lineage-specific hermeneutics that characterize living traditions across Asia.</li>
+<li><strong>Buddhism and Modernity:</strong> Investigates how Buddhist institutions, meditation practices, and doctrines have been reshaped by globalization, modern science, secularization, and social activism.</li>
+</ul>
+<h2 id="advanced-buddhist-philosophy">Advanced Buddhist Philosophy</h2>
+<p>An advanced investigation into the intricate logical, ontological, and epistemological systems developed by classical Indian and Mahāyāna scholastic traditions.</p>
+<p>Madhyamaka and the Logic of Emptiness: <a href="https://books.google.com/books?isbn=9780199922918" target="_blank" rel="noopener noreferrer">Empty Words: Buddhist Philosophy and Cross-Cultural Dialogue by Jay L. Garfield (Oxford University Press)</a> - Unpacks Nāgārjuna’s and Candrakīrti’s deconstructive dialectic through rigorous cross-cultural analytic philosophy, analyzing the semantic status of conventional truth and non-conceptual awareness.</p>
+<p>Yogācāra and Phenomenological Psychology: <a href="https://books.google.com/books?isbn=9780415598361" target="_blank" rel="noopener noreferrer">Buddhist Phenomenology: A Critical Investigation of Yogacara Philosophy and its Implications by Dan Lusthaus (Routledge)</a> - A comprehensive analysis of Vasubandhu and Xuanzang, deconstructing standard idealist misreadings of Mind-Only and reframing the school as a rigorous epistemological critique of cognitive distortion.</p>
+<p>Buddhist Epistemology and Logic (Pramāṇa): <a href="https://books.google.com/books?isbn=9780861711772" target="_blank" rel="noopener noreferrer">Foundations of Dharmakirti's Philosophy by John D. Dunne (Wisdom Publications)</a> - A systematic exposition of Dharmakīrti’s theory of valid cognition, concept exclusion, and ontological nominalism, which formed the bedrock of late Indian and Tibetan debate.</p>
+<p>Buddha-Nature and Tathāgatagarbha Ontology: <a href="https://books.google.com/books?isbn=9781559394178" target="_blank" rel="noopener noreferrer">When the Clouds Part: The Uttaratantra and Its Meditative Tradition as a Bridge between Sutra and Tantra by Karl Brunnhölzl (Snow Lion)</a> - Provides an in-depth translation and commentary on the Ratnagotravibhāga, unpacking the third major pillar of Mahāyāna philosophy regarding innate awakening and luminous mind.</p>
+<h2 id="regional-traditions-in-depth">Regional Traditions in Depth</h2>
+<p>A deep dive into how core Buddhist doctrines were uniquely institutionalized, systematized, and practiced within specific regional and monastic environments across Asia.</p>
+<p>Theravāda Abhidhamma and Meditation Phenomenology: <a href="https://books.google.com/books?isbn=9781928706021" target="_blank" rel="noopener noreferrer">A Comprehensive Manual of Abhidhamma edited and translated by Bhikkhu Bodhi (Pariyatti Press)</a> - The authoritative translation and explanatory guide to the Abhidhammattha Saṅgaha, mapping the exact micro-psychological taxonomy of consciousness, mental factors, and meditative absorption.</p>
+<p>Tibetan Monastic Scholasticism and Epistemological Debate: <a href="https://books.google.com/books?isbn=9780520232600" target="_blank" rel="noopener noreferrer">The Sound of Two Hands Clapping: The Education of a Tibetan Buddhist Monk by Georges Dreyfus (University of California Press)</a> - An unmatched institutional and intellectual ethnography by the first Westerner to earn a Geshe Lharampa degree, revealing how memorization, dialectical debate, and scholastic inquiry function in living Tibetan monasteries.</p>
+<p>East Asian Tiantai and Huayan Metaphysics: <a href="https://books.google.com/books?isbn=9780253021120" target="_blank" rel="noopener noreferrer">Emptiness and Omnipresence: An Essential Introduction to Tiantai Buddhism by Brook Ziporyn (Indiana University Press)</a> - A penetrating philosophical treatment of Zhiyi’s threefold truth and omnicentric holism, demonstrating how Chinese Buddhism reworked Indian emptiness into a radical ontology of immanence and mutual containment.</p>
+<p>Indo-Tibetan Tantra and Esoteric Buddhism: <a href="https://books.google.com/books?isbn=9780231126199" target="_blank" rel="noopener noreferrer">Indian Esoteric Buddhism: A Social History of the Tantric Movement by Ronald M. Davidson (Columbia University Press)</a> - The seminal historical monograph examining the sociopolitical genesis, feudal symbolism, ritual technologies, and monastic assimilation of Tantra in medieval India.</p>
+<h2 id="buddhism-and-modernity">Buddhism and Modernity</h2>
+<p>An examination of how Buddhism has adapted to, and been fundamentally reshaped by, encounters with modernism, secularism, scientific psychology, and contemporary social movements.</p>
+<p>Buddhist Modernism and Historical Reform: <a href="https://books.google.com/books?isbn=9780195183276" target="_blank" rel="noopener noreferrer">The Making of Buddhist Modernism by David L. McMahan (Oxford University Press)</a> - The definitive historical study showing how interactions with Western colonial powers, romanticism, and scientific rationalism produced the modernized Buddhism recognized today.</p>
+<p>The Mindfulness Movement and Secularization: <a href="https://www.coursera.org/learn/mindfulness" target="_blank" rel="noopener noreferrer">De-Mystifying Mindfulness (Universiteit Leiden on Coursera)</a> - A comprehensive, free university-level MOOC taught by Prof. Chris Goto-Jones that critically analyzes the historical roots, psychological claims, commodification, and cultural impacts of modern mindfulness.</p>
+<p>The Mindfulness Movement and Secularization: <a href="https://escholarship.org/uc/item/7264r9wq" target="_blank" rel="noopener noreferrer">Is mindfulness Buddhist? (and why it matters) by Robert H. Sharf (eScholarship)</a> - A seminal open-access academic article complementing the course above by tracing how Buddhist meditation was reconstructed in late 19th-century Asia to appeal to Western scientific empiricism.</p>
+<p>Socially Engaged Buddhism and Contemporary Ethics: <a href="https://books.google.com/books?isbn=9780824834050" target="_blank" rel="noopener noreferrer">Socially Engaged Buddhism by Sallie B. King (University of Hawaii Press)</a> - Investigates the theological foundations, nonviolent activism, and ethical strategies of contemporary Buddhist movements confronting war, oppression, and ecological destruction.</p>
+<p>Buddhism, Cognitive Science, and Philosophy of Mind: <a href="https://books.google.com/books?isbn=9780300226553" target="_blank" rel="noopener noreferrer">Why I Am Not a Buddhist by Evan Thompson (Yale University Press)</a> - A critical philosophical inquiry by a leading cognitive scientist that deconstructs neural Buddhism and Buddhist exceptionalism while defending a cosmopolitan, embodied approach to the mind.</p>
+    </article>
+  </main>
+
+</body>
+</html>
